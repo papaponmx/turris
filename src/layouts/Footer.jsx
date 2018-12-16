@@ -25,8 +25,8 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Gatsby Tutorial Starter -{' '}
-        <a href="https://justinformentin.com">Justin Formentin</a>
+        Turrics CI All z  Rights Reserved -
+        <a href="https://github.com/papaponmx">@papaponmx</a>
       </span>
     </Text>
   </Wrapper>

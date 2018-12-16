@@ -8,6 +8,8 @@ import { SEO } from 'components';
 import { NavBar, Footer } from 'layouts';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
+import styled from 'react-emotion';
+
 
 injectGlobal`
 
@@ -51,12 +53,18 @@ injectGlobal`
   ${headroom}
 `;
 
+const SiteContainer = styled.div`
+  min-height: 90vh;
+`
+
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Fragment>
       <SEO />
       <NavBar />
-      {children}
+      <SiteContainer>
+        {children}
+      </SiteContainer>
       <Footer />
     </Fragment>
   </ThemeProvider>
